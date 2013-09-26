@@ -1,7 +1,4 @@
 Highcharts Python
 =================
 
-Create highcharts configs using python.
-
-
-More Documentation coming soon.
+配置angularjs 做后台数据渲染

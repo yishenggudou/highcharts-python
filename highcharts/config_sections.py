@@ -72,6 +72,11 @@ class XAxisConfig(ConfigSection):
     available_options = options.X_AXIS_CONFIG
     defaults = {
         "title": TitleConfig,
+        "minTickInterval": 1,
+        "tickInterval": 1,
+        "tickWidth": 0.5,
+        "tickLength": 10,
+        "categories": []
     }
 
 
@@ -84,4 +89,22 @@ class YAxisConfig(ConfigSection):
     available_options = options.Y_AXIS_CONFIG
     defaults = {
         "title": TitleConfig,
+    }
+
+
+
+class plotOptionsConfig(ConfigSection):
+    '''
+    The 'yAxis' section of a Highcharts config.
+
+    See http://www.highcharts.com/ref/#yAxis for available options.
+    See http://api.highcharts.com/highcharts#plotOptions.line
+    '''
+    available_options = [] #options.Y_AXIS_CONFIG
+    defaults = {
+        "line": {},
+        "series": {
+                "lineWidth": 1,
+                "dashStyle": 'Solid',
+                }
     }

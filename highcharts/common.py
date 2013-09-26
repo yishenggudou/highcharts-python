@@ -54,7 +54,13 @@ class DictBacked(object):
                 raise AttributeError('Invalid option %s' % key)
 
     def as_json(self):
-        return self.options
+        vv = self.options
+        for key in vv.keys():
+            try:
+                vv[key] = vv[key].as_json()
+            except:
+                pass
+        return vv
 
 
 class ConfigSection(DictBacked):

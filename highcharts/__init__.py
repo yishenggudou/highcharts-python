@@ -20,7 +20,8 @@ class Chart(DictBacked):
         "legend": LegendConfig,
         "tooltip": TooltipConfig,
         "xAxis": XAxisConfig,
-        "yAxis": YAxisConfig
+        "yAxis": YAxisConfig,
+        "plotOptions": plotOptionsConfig
     }
 
     def add_series(self, series):
