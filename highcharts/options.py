@@ -183,6 +183,7 @@ X_AXIS_CONFIG = [
     'maxPadding',
     'maxZoom',
     'min',
+    'minTickInterval',
     'minorGridLineColor',
     'minorGridLineDashStyle',
     'minorGridLineWidth',

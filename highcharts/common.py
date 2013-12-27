@@ -2,6 +2,7 @@
 Common objects used in this package.
 '''
 import copy
+import json
 
 
 class HighchartError(Exception):
@@ -61,6 +62,9 @@ class DictBacked(object):
             except:
                 pass
         return vv
+
+    def _as_json(self):
+        return json.dumps(self.as_json())
 
 
 class ConfigSection(DictBacked):
